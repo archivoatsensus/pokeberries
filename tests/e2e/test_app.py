@@ -7,6 +7,7 @@ def test_index(app, client):
 
 def test_all_berries(app, client):
     response = client.get('/allBerryStats')
+    assert response.status_code == 200
 
     # check headers as required
     assert response.headers['Content-Type'] == 'application/json'
