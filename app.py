@@ -10,6 +10,7 @@ SOURCE_URL_ENV_NAME = 'POKEBERRIES_SOURCE_URL'
 PORT_ENV_NAME = 'POKEBERRIES_PORT'
 SOURCE_URL = None
 PORT = None
+DEV_HOST = '0.0.0.0'
 
 app_config = False
 
@@ -60,4 +61,4 @@ def load_config():
 
 if __name__ == '__main__':
     load_config()
-    app.run(port=PORT)
+    app.run(host=DEV_HOST, port=PORT)
