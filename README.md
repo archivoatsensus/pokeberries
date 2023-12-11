@@ -30,7 +30,12 @@ To test the API listening OK:
 To get Pokeberries statistics:
 `http://127.0.0.1:5005/allBerryStats`
 
+### Deployed version for testing usages
+To test the API listening OK:
+`https://archivoatsensus.pythonanywhere.com/`
 
+To get Pokeberries statistics:
+`https://archivoatsensus.pythonanywhere.com/allBerryStats`
 
 
 ## Tests
