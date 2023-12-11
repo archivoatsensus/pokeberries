@@ -4,6 +4,13 @@ A Pokeberries statistics API
 
 
 ## Configuration
+### Python
+Developed and tested with: `Python 3.10.12`
+
+### Dependencies
+Install with (recommended virtual environment for local running):
+`./pokeberries$ pip install -r requirements.txt`
+
 ### Environment variables
 - `POKEBERRIES_PORT`
 The PORT where the Pokeberries Stats App will be listening (recommended: 5005)
@@ -13,9 +20,20 @@ The Berries endPoint complete url to be used as a source of information (e.g. ht
 
 
 ## Usage
+### Back-end start
 `./pokeberries$ python3 app.py`
 
+### Local usage
+To test the API listening OK:
+`http://127.0.0.1:5005/`
+
+To get Pokeberries statistics:
+`http://127.0.0.1:5005/allBerryStats`
+
+
+
+
 ## Tests
-You can run some unit tests and end-to-end tests (needs installed dependencies):
+You can run unit and end-to-end tests (needs installed dependencies):
 `./pokeberries$ python3 -m pytest -v`
 
